@@ -82,6 +82,7 @@ a::after {
   a.active {
     background-color: rgba(14, 129, 230, 0.685);
     
+    
   }
 
 </style>
