@@ -47,7 +47,6 @@
     backdrop-filter:unset;
     background-color: rgba(223, 223, 234, 0.8);
   }
-
   .navigate{
   margin: 0;
   height: 85%;
