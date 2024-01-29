@@ -14,3 +14,9 @@ app.use(router)
 
 // 挂载整个应用到APP容器中
 app.mount('#app')
+
+// 配置axios为全局对象
+import axios from 'axios'
+axios.defaults.baseURL = 'http://localhost:8000'
+// axios.defaults.baseURL = 'http://localhost:3000'
+app.config.globalProperties.$axios = axios

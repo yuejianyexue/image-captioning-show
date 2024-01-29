@@ -4,6 +4,7 @@
     <!-- 导航区 -->
     <div class="navigate"> 
  <RouterLink replace :to="{path:'/home'}" active-class="active"><span>首页</span></RouterLink>    
+ <RouterLink replace :to="{path:'/imagecaption'}" active-class="active">图像描述</RouterLink>    
  <RouterLink replace :to="{path:'/databases'}" active-class="active">数据库</RouterLink>    
  <RouterLink replace :to="{path:'/about'}" active-class="active">关于</RouterLink>    
     </div>

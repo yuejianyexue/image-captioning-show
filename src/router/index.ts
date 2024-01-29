@@ -9,6 +9,7 @@ import About from '@/components/About.vue'
 import Databases from '@/components/Databases.vue'
 import image from '@/components/image.vue'
 import caption from "@/components/caption.vue"
+import imageCaptioning from '@/components/imageCaptioning.vue'
 
 // 创建路由器
 const router = createRouter({
@@ -38,6 +39,11 @@ const router = createRouter({
         {
         path:'/about',
         component:About
+    },
+    {
+        name:'imagecaptioning',
+        path:'/imagecaption',
+        component:imageCaptioning
     },
     {
         // 重定向到home，使得打开的第一个页面是/home
