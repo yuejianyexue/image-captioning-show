@@ -1,0 +1,142 @@
+.button {
+  margin-right: 100px;
+}
+.button a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button .icon {
+  display: flex;
+  display: inline-block;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0;
+  transition: transform 1s;
+}
+.button .icon a {
+  color: #6cf405;
+  width: 80px;
+}
+.button .icon a:hover {
+  background-color: #12131270;
+  transform: scale(1.2);
+}
+.button .icon .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 80px;
+  font-size: 16px;
+  font-weight: 100;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.button .icon .dropdown a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 5px 0px;
+}
+.button .icon .dropdown a:hover {
+  color: #fff;
+  transform: scale(1);
+  background-color: #68b88e;
+}
+.button .icon .iconfont {
+  font-size: 30px;
+}
+.button .icon .iconfont:hover {
+  font-size: 32px;
+}
+.button .icon span {
+  font-size: 12px;
+  margin: 5px;
+  padding: 0;
+  margin-top: 0;
+}
+.icon:hover .dropdown {
+  display: block;
+}
+.app {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-position: center;
+  /* background-color: rgba(119, 215, 226); */
+  margin: 0;
+}
+.title {
+  background-color: #68b88e;
+  height: 70px;
+  width: 100%;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  color: aqua;
+  justify-content: space-between;
+}
+.title .name {
+  margin-left: 50px;
+}
+.title .name p {
+  color: #fff;
+  display: inline-block;
+  margin-left: 10px;
+}
+.bock {
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 15px ;
+}
+.main-content {
+  margin: 10px 0px 0px 10px;
+  border-radius: 2%;
+  backdrop-filter: unset;
+}
+.navigate {
+  margin: 0;
+  height: 100%;
+  padding-top: 20px;
+  width: 10%;
+  display: flex;
+  background-color: #fff;
+  font-weight: 900;
+  /* border-radius: 5%; */
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rgba(0, 255, 255, 0.319); */
+}
+.navigate a {
+  margin: 0;
+  width: 100%;
+  height: 10%;
+  color: #0fec6f;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  position: relative;
+}
+.navigate a::after {
+  content: '';
+  width: 80%;
+  display: block;
+  /* 设置伪类为块级元素，这样可以设置宽度 */
+  border-bottom: 2px solid #68b88e;
+  position: absolute;
+  bottom: 0;
+}
+.navigate a.active {
+  background-color: #68b88e;
+  color: #fff;
+}

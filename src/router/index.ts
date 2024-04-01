@@ -4,13 +4,13 @@
 import { createRouter ,createWebHistory} from "vue-router";
 
 // 引入需要用到的组件
-import Home from '@/components/Home.vue'
-import About from '@/components/About.vue'
-import Databases from '@/components/Databases.vue'
-import image from '@/components/image.vue'
-import caption from "@/components/caption.vue"
-import imageCaptioning from '@/components/imageCaptioning.vue'
-
+import Home from '@/assets/components/Home.vue'
+import About from '@/assets/components/About.vue'
+import Databases from '@/assets/components/Databases.vue'
+import image from '@/assets/components/image.vue'
+import caption from "@/assets/components/caption.vue"
+import imageCaptioning from '@/assets/components/imageCaptioning.vue'
+// import xx from '@/assets/components/'
 // 创建路由器
 const router = createRouter({
     history:createWebHistory(), //设置路由器的工作模式

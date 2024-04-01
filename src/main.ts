@@ -1,6 +1,7 @@
 
 import { createApp } from 'vue'
 import App from './App.vue'
+import '@/assets/css/iconfont.css'
 
 import '@/assets/css/main.css'
 // 引入路由器

@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    background-color: #99999927;
     background-size: cover;
-    background-image: url("../src/assets/image/back.jpg");
+    /* background-image: url("../src/assets/image/back.jpg"); */
 }

@@ -10,6 +10,7 @@
 import { ref } from 'vue';
 import axios from 'axios';
 
+
 const imageSrc = ref('')
 
 function getImage(){
@@ -22,7 +23,7 @@ function getImage(){
       )
       imageSrc.value = `data:${Response.headers['content-type']};base64,${base64Image}`; 
     }).catch(error => {  
-          console.error('Error fetching image:', error); 
+          // console.error('Error fetching image:', error); 
         })
     
       }
