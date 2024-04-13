@@ -10,10 +10,8 @@
             <span>探索</span>
           </a>
           <div class="dropdown">
-            <a href="#">发现</a>
-            <a href="#">图像1</a>
-            <a href="#">图像2</a>
-            <a href="#">图像3</a>
+            <a href="#">其他用户</a>
+            <a href="#">数据库</a>
           </div>
         </li>
 
@@ -23,10 +21,8 @@
           <span>登录</span>
         </a>
           <div class="dropdown">
-            <a href="#">发现</a>
-            <a href="#">图像1</a>
-            <a href="#">图像2</a>
-            <a href="#">图像3</a>
+            <a href="#">登录</a>
+            <a href="#">注册</a>
           </div>
         </li>
         <li class="icon">
@@ -34,12 +30,6 @@
           <div class="iconfont icon-suiji"></div>
           <span>随机</span>
         </a>
-          <div class="dropdown">
-            <a href="#">发现</a>
-            <a href="#">图像1</a>
-            <a href="#">图像2</a>
-            <a href="#">图像3</a>
-          </div>
         </li>
         
       </ul>
@@ -48,7 +38,7 @@
     <!-- 导航区 -->
     <div class="navigate">
       <RouterLink replace :to="{ path: '/home' }" active-class="active"><span>首页</span></RouterLink>
-      <RouterLink replace :to="{ path: '/imagecaption' }" active-class="active">图像描述</RouterLink>
+      <RouterLink replace :to="{ path: '/upcaption' }" active-class="active">图像描述</RouterLink>
       <RouterLink replace :to="{ path: '/databases' }" active-class="active">数据库</RouterLink>
       <RouterLink replace :to="{ path: '/about' }" active-class="active">关于</RouterLink>
     </div>

@@ -10,6 +10,7 @@ import Databases from '@/assets/components/Databases.vue'
 import image from '@/assets/components/image.vue'
 import caption from "@/assets/components/caption.vue"
 import imageCaptioning from '@/assets/components/imageCaptioning.vue'
+import Upcaption from "@/assets/components/upcaption.vue";
 // import xx from '@/assets/components/'
 // 创建路由器
 const router = createRouter({
@@ -41,9 +42,9 @@ const router = createRouter({
         component:About
     },
     {
-        name:'imagecaptioning',
-        path:'/imagecaption',
-        component:imageCaptioning
+        name:'upcaption',
+        path:'/upcaption',
+        component:Upcaption
     },
     {
         // 重定向到home，使得打开的第一个页面是/home
