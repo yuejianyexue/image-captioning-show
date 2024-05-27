@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+    <!-- 获取图像描述组件 -->
     <div class="left">
       <h1>上传你的图片获取文本描述</h1>
       <div>
@@ -12,6 +13,8 @@
 
       </div>
     </div>
+    
+    <!-- 展示数据库内容组件 -->
     <div class="right">
       <div class="title">
         <h1>数据库中的数据</h1>
@@ -38,9 +41,14 @@ import { ref } from 'vue';
 import axios from 'axios';
 const imageUrl = ref('')
 const file = ref()
-const caption = ref("示例文本：一片叶子")
 const re = ref('示例文本:一片叶子 ')
-const images = ref([]);
+const images = ref([{
+  image_data:'',
+  caption:''
+}]);
+import {useUserStore} from '@/assets/store/user'
+
+const userStore = useUserStore()
 
 
 //读取用户上传的文件保存到file
@@ -65,6 +73,8 @@ function getCaption() {
   const formData = new window.FormData()
 
   formData.append('file', file.value)
+  formData.append('userName', userStore.username)
+
   console.log(formData.get('file'))
   re.value = '数据解析中...'
   axios.post('/getCaption', formData, {
@@ -93,7 +103,7 @@ function getList(){
         item.image_data = 'data:image/jpeg;base64,' + item.image_data;
       });
     images.value=response.data
-    // console.log(images.value)
+    console.log(images.value)
   })
   .catch(function (error) {
     // 请求失败处理

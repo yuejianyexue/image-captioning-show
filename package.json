@@ -11,15 +11,21 @@
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
     "axios": "^1.6.5",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "cros": "^1.0.1",
     "crypto": "^1.0.1",
+    "element-plus": "^2.7.1",
     "express": "^4.18.2",
     "mysql": "^2.18.1",
+    "pinia": "^2.1.7",
     "vue": "^3.3.11",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.2.5",
+    "vuelidate": "^0.7.7",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@tsconfig/node18": "^18.2.2",

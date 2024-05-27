@@ -1,59 +1,50 @@
 @font-face {
-    font-family: "iconfont"; /* Project id 4489200 */
-    src: url('//at.alicdn.com/t/c/font_4489200_79eltb62fcc.woff2?t=1711812787055') format('woff2'),
-         url('//at.alicdn.com/t/c/font_4489200_79eltb62fcc.woff?t=1711812787055') format('woff'),
-         url('//at.alicdn.com/t/c/font_4489200_79eltb62fcc.ttf?t=1711812787055') format('truetype');
-  }
-  
-  .iconfont {
-    font-family: "iconfont" !important;
-    font-size: 16px;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-suiji:before {
-    content: "\e8e2";
-  }
-  
-  .icon-suiji1:before {
-    content: "\e608";
-  }
-  
-  .icon-suiji2:before {
-    content: "\e65b";
-  }
-  
-  .icon-denglu:before {
-    content: "\e62e";
-  }
-  
-  .icon-denglu1:before {
-    content: "\e611";
-  }
-  
-  .icon-shujutansuo:before {
-    content: "\e62c";
-  }
-  
-  .icon-icon-test:before {
-    content: "\e61a";
-  }
-  
-  .icon-huafangtubiaozhizuomobandinggao-:before {
-    content: "\e604";
-  }
-  
-  .icon-plant:before {
-    content: "\e600";
-  }
-  
-  .icon-a-zhiwuzuzhenxizhong:before {
-    content: "\e786";
-  }
-  
-  .icon-flower12:before {
-    content: "\e7cb";
-  }
-  
+  font-family: "iconfont"; /* Project id 4489200 */
+  src: url('//at.alicdn.com/t/c/font_4489200_dkkwh60roa5.woff2?t=1713351148122') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4489200_dkkwh60roa5.woff?t=1713351148122') format('woff'),
+       url('//at.alicdn.com/t/c/font_4489200_dkkwh60roa5.ttf?t=1713351148122') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-denglu2:before {
+  content: "\e602";
+}
+
+.icon-suiji1:before {
+  content: "\e608";
+}
+
+.icon-denglu:before {
+  content: "\e62e";
+}
+
+.icon-denglu1:before {
+  content: "\e611";
+}
+
+.icon-shujutansuo:before {
+  content: "\e62c";
+}
+
+.icon-icon-test:before {
+  content: "\e61a";
+}
+
+.icon-plant:before {
+  content: "\e600";
+}
+
+.icon-a-zhiwuzuzhenxizhong:before {
+  content: "\e786";
+}
+
+.icon-flower12:before {
+  content: "\e7cb";
+}

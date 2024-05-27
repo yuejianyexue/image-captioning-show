@@ -1,0 +1,91 @@
+/* 设置登录组件样式 */
+.login-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 30%;
+    // background-color: #fff;
+    padding: 20px;
+    // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+
+    .login-form {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        h2 {
+            color: #68b88e;
+        }
+    }
+
+    input {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+}
+
+.loginBox {
+    .register-button {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        background-color: #f0f0f0;
+        color: #333;
+    }
+
+    .login-button {
+        background-color: #68b88e;
+        color: #fff;
+        margin-right: 30px;
+    }
+
+    .login-button,
+    .register-button {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .login-button {
+        background-color: #68b88e;
+        ;
+        color: #fff;
+    }
+
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-button:hover,
+.register-button:hover {
+    background-color: #4d8a6b;
+}
+
+/* 设置遮罩层样式 */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}

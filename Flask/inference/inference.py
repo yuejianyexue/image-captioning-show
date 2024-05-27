@@ -86,7 +86,7 @@ def extract_caption(image_path):
 
     word_index_file = 'inference/model/word_index.txt'
     # 加载进行推理的图片
-    image_path = image_path  # 替换为你实际图片的路径
+    image_path = image_path  
     loaded_word_index = load_word_index(word_index_file)
     # 创建tokenizer实例
     tokenizer = Tokenizer()
@@ -94,7 +94,7 @@ def extract_caption(image_path):
     # 获取特征
 
     features = tztq(image_path)
-    text = predict_caption(model=model, features=features, tokenizer=tokenizer, max_length=21)
+    text = predict_caption(model=model, features=features, tokenizer=tokenizer, max_length=35)
     text = text.replace(" ", "")
     text = text.replace("endseq", "")
     text = text.replace("startseq", "")
@@ -103,6 +103,6 @@ def extract_caption(image_path):
 
 
 if __name__ == '__main__':
-    image_path = 'test.jpg'  # 替换为你实际图片的路径
+    image_path = 'test.jpg'  
     caption = extract_caption(image_path)
     print(caption)
